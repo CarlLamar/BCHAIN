@@ -1,0 +1,12 @@
+* {
+    background-color: rgb(3, 200, 214);
+  }
+
+  ul {
+    border: 5px solid red;
+}
+ h1 {
+  animation-name: mymove;
+}
+
+
