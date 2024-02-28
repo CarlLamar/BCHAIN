@@ -14,13 +14,14 @@ contract IfElse {
     }
 
     function ternary(int _x) public pure returns (uint) {
-        return _x < 10 ? 1: 2;
-    }
-}
-
-// if (_x < 10) {
+        // if (_x < 10) {
         //     return 1;
         // }
         // return 2;
         // Shorthand way to write if / else statement
         // the "?" operator is called the ternary operator 
+        return _x < 10 ? 1: 2;
+    }
+}
+
+
