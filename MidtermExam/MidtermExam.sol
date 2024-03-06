@@ -21,13 +21,11 @@ mapping(address => Student) public students;
 event GradeComputed(string studentName, uint256 gradeOverall, GradeStatus gradeStatus);
 
 modifier onlyOwner() {
-require(msg.sender == owner, "Only the owner can call this function");
-_;
+require(msg.sender == owner, "Only the owner can call this function");_;
 }
 
 modifier validGrade(uint256 grade) {
-require(grade >= 0 && grade <= 100, "Invalid grade. Must be between 0 and 100");
-_;
+require(grade >= 0 && grade <= 100, "Invalid grade. Must be between 0 and 100");_;
 }
 
 constructor() {
